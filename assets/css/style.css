@@ -1,0 +1,33 @@
+#header {
+  background-color: #7b1fa2;
+  font-family: 'Patua One', cursive;
+
+}
+
+#card {
+  background-color: #FFFFFF;
+  font-family: Avenir;
+}
+
+body {
+  background-color: #d1c4e9;
+}
+
+#loader {
+  display: none;
+  position: relative;
+  height: 275px;
+  width: 275px;
+
+}
+
+#userLoc{
+  display: none;
+}
+
+#map {
+	height: 300px;
+	width: 1110px;
+  margin: auto;
+}
+

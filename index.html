@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+  <title>See You There! Demo</title>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGKGnP-boj7omATtX-mLqtzg3dlpUSCL0&libraries=places"></script>
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper" id="header">
+      <a href="#" class="brand-logo center">See You There</a>
+    </div>
+  </nav>
+
+  <div class="container" id="main">
+    <!--Form Inputs-->
+    <div class="row">
+      <div class="col s12">
+        <div class="card-pannel z-depth-1" id="card" style="
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    ">
+          <div class="card-title">
+            <h4>Where are you?</h4>
+          </div>
+          <div class="card-content black-text">
+            <div class="row">
+              <form class="col s12">
+              </form>
+            </div>
+            <div class="row">
+              <form class=" col s12">
+                <div class="input-field col s6">
+
+                  Address 1:
+                  <input type="text" id="Source" style="width: 200px" />
+                </div>
+                <div class="input-field col s6">
+                  Address 2:
+                  <input type="text" id="Destination" style="width: 200px" />
+
+                </div>
+              </form>
+            </div>
+            <button class="btn waves-effect waves-light submit #f4511e deep-orange darken-1" input type="button"
+              value="Get Route" onclick="GetRoute()">Find Destinations
+            </button>
+
+            <div class="row">
+              <div class="col s12">
+                <div id="Map" style="width: 100%; height: 300px">
+                </div>
+              </div>
+            </div>
+
+            <div class="container" id="yelp">
+              <!--YELP CARDS-->
+              <div id="topChoices">
+                <div class="row">
+                  <div class="col s4 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <!-- <img src="images/sample-1.jpg"> -->
+                        <span class="card-title"></span>
+                      </div>
+                      <div class="card-content">
+                        <p id="r1">Restaurants info</p>
+                      </div>
+                      <div class="card-content">
+                        <img id="r1img" style="width: 100%">
+                      </div>
+                      <div class="card-action">
+                        <a id="r1Web" href="#">Website</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s4 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <!-- <img src="images/sample-1.jpg"> -->
+                        <span class="card-title">
+                      </div>
+                      <div class="card-content">
+                        <p id="r2">Restaurants info</p>
+                      </div>
+                      <div class="card-content">
+                        <img id="r2img" style="width: 100%">
+                      </div>
+                      <div class="card-action">
+                        <a id="r2Web" href="#">Website</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s4 m4">
+                    <div class="card">
+                      <div class="card-image">
+                        <!-- <img src="images/sample-1.jpg"> -->
+                        <span class="card-title"></span>
+                      </div>
+                      <div class="card-content">
+                        <p id="r3">Restaurants info</p>
+                      </div>
+                      <div class="card-content">
+                        <img id="r3img" style="width: 100%">
+                      </div>
+                      <div class="card-action">
+                        <a id="r3Web" href="#">Website</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
