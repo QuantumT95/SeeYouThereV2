@@ -1,0 +1,22 @@
+{
+  "name": "seeyoutherev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantumT95/SeeYouThereV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuantumT95/SeeYouThereV2/issues"
+  },
+  "homepage": "https://github.com/QuantumT95/SeeYouThereV2#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

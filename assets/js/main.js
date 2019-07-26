@@ -48,7 +48,7 @@ function GetRoute() {
     var finMidPoint = repMidPoint.replace(")", "");
 
 
-    console.log(finMidPoint);
+    // console.log(finMidPoint);
 
     //yelp request
 
@@ -83,25 +83,39 @@ function GetRoute() {
     }
 
     $.ajax(yelp).done(function (response) {
-        console.log(response);
+        // console.log(response);
 
-        console.log(response.businesses[0]);
+        // console.log(response.businesses[0]);
         // console.log(response.businesses[1]);
 
         //this will be used to create the card info
-        $("#r1").html(response.businesses[0].name);
+        // $("#r1").html(response.businesses[0].name);
+        var resName0 = response.businesses[0].name;
+        if (resName0.length > 20) {
+            resName0 = resName0.substring(0, 20);
+        }
+        $("#r1").html(resName0);
         $("#r1Web").attr("href", response.businesses[0].url);
         $("#r1img").attr("src", response.businesses[0].image_url);
 
 
 
-        $("#r2").html(response.businesses[1].name);
+        var resName1 = response.businesses[1].name;
+        if (resName1.length > 20) {
+            resName1 = resName1.substring(0, 20);
+        }
+        $("#r2").html(resName1);
         $("#r2Web").attr("href", response.businesses[1].url);
         $("#r2img").attr("src", response.businesses[1].image_url);
 
 
 
-        $("#r3").html(response.businesses[2].name);
+
+        var resName2 = response.businesses[2].name;
+        if (resName2.length > 20) {
+            resName2 = resName2.substring(0, 20);
+        }
+        $("#r3").html(resName2);
         $("#r3Web").attr("href", response.businesses[2].url);
         $("#r3img").attr("src", response.businesses[2].image_url);
 
@@ -109,10 +123,7 @@ function GetRoute() {
 
     });
 
-    console.log(yelp);
-
-
-
+    // console.log(yelp);
 
     //*********DISTANCE AND DURATION**********************//
     var service = new google.maps.DistanceMatrixService();
