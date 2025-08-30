@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/QuantumT95/SeeYouThereV2#readme",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^5.0.0"
   }
 }
